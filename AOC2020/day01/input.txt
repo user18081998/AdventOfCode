@@ -1,17 +1,4 @@
-#%%
-import itertools 
-def part1(l):
-    for i in l:
-        if 2020-i in l : return i
-    return 0
-def part2(l):
-    for i,j,k in itertools.product(l,l,l): 
-        if i+j+k==2020: 
-            return i*j*k
-    return 0
-
-#%%
-s="""1509
+1509
 1857
 1736
 1815
@@ -210,9 +197,4 @@ s="""1509
 1382
 1246
 1864
-1702"""
-
-l = [int(i) for i in s.split()]
-# %%
-print(part1(l))
-print(part2(l))
+1702
